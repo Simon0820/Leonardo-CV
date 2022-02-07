@@ -1,0 +1,102 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    background-color: hsl(40, 50%, 60%);
+    margin: auto;
+    font-size: 18px;
+}
+
+header{
+    text-align: center;
+    padding: 5px;
+}
+
+h1, h2 {
+    font-weight: initial;
+}
+
+main {
+    max-width: 80rem;
+    padding: 15px;
+    margin: auto;
+    background-color: hsl(40, 100%, 85%)
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    border-bottom: hsl(40, 50%, 60%) thin solid;
+    border-top: hsl(40, 50%, 60%) thin solid;
+}
+
+.image {
+    padding: 10px;
+    padding-left: 0;
+}
+
+.textboxcontainer {
+    padding: 10px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textbox {
+    padding: 10px;
+}
+
+#merits {
+    display: flex;
+    flex-direction: row;
+    border-bottom: hsl(40, 50%, 60%) thin solid;
+}
+
+h2 {
+    text-align: center;
+}
+
+.movies {
+    flex: 1;
+}
+
+.awards {
+    flex: 1;
+}
+
+ul {
+    list-style: square;
+} 
+
+.nominated {
+    color:hsl(0, 0%, 50%) ;
+}
+
+.won {
+    color: hsl(40, 100%, 35%);
+}
+
+#footer {
+    list-style: none;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+
+        #container{
+            flex-direction: column;
+        }
+
+        .image{
+            align-self: center;
+        }
+
+        #merits {
+            flex-direction: column;
+        }
+}
+
+@media (max-width: 1150px) {
+    body {
+        background-color: hsl(40, 100%, 85%)
+    }
+}
